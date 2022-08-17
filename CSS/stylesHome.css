@@ -1,0 +1,514 @@
+/*importando fontes*/
+@font-face {
+    font-family: opensans;
+    src: url(../fontes/static/OpenSans/OpenSans-Regular.ttf);
+  }
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'opensans';
+    box-sizing: border-box;
+}
+
+/*topo inicio -----------------------------------*/
+
+header{
+    background-color: #1B2339;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+header section{
+    width: 1200px;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+header section article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section article .item1{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header section article .item1:hover {
+    opacity: 50%;
+}
+
+/*topo final -----------------------------------*/
+
+/*head banner inicio-----------------------------------*/
+
+.headbanner{
+    height: 250px;
+    background-image: linear-gradient(to right, black, #4A7AFF,black);
+    background-color: #4A7AFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .headbanner .fundo {
+    height: 244px;
+    background-image: linear-gradient(to right, black, rgb(255,255,255,0),black);
+    display: flex;
+    justify-content: center;
+} */
+
+.headbanner .container-1{
+    width: 1200px;
+
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+.headbanner .container-1 article {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.headbanner .container-1 .item1 {
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    max-width: 500px;
+}
+
+
+.headbanner .container-1 .item2{
+    display: flex;
+    width: 350px;
+    height: 100px;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+
+.headbanner .container-1 .item2 nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.headbanner .container-1 .item2 nav a:hover{
+    color:#4A7AFF;
+    transition: 50ms;
+}
+.headbanner .container-1 .item2 button {
+    width: 300px;
+    height:70px;
+
+    border-style: none;
+    border-radius: 10px;
+    background-color: #FF3333;
+
+    color: white;
+    font-size: 30px;
+
+    box-shadow: 0px 0px 10px black;
+    background-image: url(/images/shopping-cart.png);
+    background-position: 10px center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+.headbanner .container-1 .item2 button:hover{
+    opacity: 50%;
+}
+
+.headbanner .container-1 .item3 input{
+    margin: 20px auto;
+    padding: 5px;
+    width: 820px;
+    height: 70px;
+
+    border-style: none;
+    border-radius: 10px;
+    background-color: white;
+
+    color: black;
+    font-size: 30px;
+
+    box-shadow: 0px 0px 10px black;
+    background-image: url(/images/search.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+/*head banner final-----------------------------------*/
+
+/*menu inicio-----------------------------------*/
+.menu{
+    height: 80px;
+    background-color: #FF3333;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu .container-1{
+    width: 1200px;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.menu .container-1 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu .container-1 article .item1{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu .container-1 article .item1:hover {
+    opacity: 50%;
+}
+/*menu final-----------------------------------*/
+
+
+/*corpo inicio-----------------------------------*/
+.body1{
+    height: 3200px;
+    background-image: url(../images/BACKGROUNG_BODY.svg);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/*corpo ofertas inicio-----------------------------------*/
+.body1 h1 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.body1 .ofertascontainer{
+    width: 1200px;
+    height: 935px;
+    
+}
+
+.body1 .ofertascontainer .ofertaslinha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 25px;
+    height:400px;
+}
+
+/*corpo ofertas card inicio-----------------------------------*/
+.body1 .ofertascontainer .cardcontainer {
+    padding: 10px;
+
+    height: 400px;
+    width: 280px;
+    background-image: linear-gradient(#AA3939, #1B2339);
+
+    box-shadow: 0px 0px 10px black;
+
+    margin: 0 10px;
+
+}
+.body1 .ofertascontainer .cardcontainer img{
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    object-position: 90% 50%;
+
+    box-shadow: 0px 0px 10px black;
+}
+
+.body1 .ofertascontainer .cardcontainer .description{
+    color: white;
+    font-size: 30px;
+}
+
+.body1 .ofertascontainer .cardcontainer .condition{
+    color: white;
+    font-size: 16px;
+    
+}
+
+.body1 .ofertascontainer .cardcontainer .price{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.body1 .ofertascontainer .cardcontainer:hover{
+    opacity: 50%;
+}
+
+.body1 .ofertascontainer .scroller:hover{
+    opacity: 50%;
+}
+/*corpo final-----------------------------------*/
+
+/*corpo destques inicio-----------------------------------*/
+.body1 .destaquescontainer{
+    width: 1400px;
+    height: 2000px;
+
+    margin-top: 75px;
+
+    background-color: #2F4172;
+
+    box-shadow: 0px 0px 10px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.body1 h2 {
+    margin-top: 25px;
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*corpo destaques row -----------------------------------*/
+.body1 .destaquescontainer .destaquerow{
+     width: 1200px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.body1 .destaquescontainer .destqueRowTittle{
+    width: 1200px;
+
+    display: flex;
+    align-items: flex-start;
+
+}
+
+/*corpo destaques card inicio-----------------------------------*/
+.body1 .destaquescontainer .cardcontainer {
+    padding: 10px;
+
+    height: 400px;
+    width: 280px;
+    background-image: linear-gradient(#AA3939, #1B2339);
+
+    box-shadow: 0px 0px 10px black;
+
+    margin: 0 10px;
+
+}
+
+.body1 .destaquescontainer .cardcontainer img{
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    object-position: 90% 50%;
+
+    box-shadow: 0px 0px 10px black;
+}
+
+.body1 .destaquescontainer .cardcontainer .description{
+    color: white;
+    font-size: 30px;
+}
+
+.body1 .destaquescontainer .cardcontainer .condition{
+    color: white;
+    font-size: 16px;
+    
+}
+
+.body1 .destaquescontainer .cardcontainer .price{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.body1 .destaquescontainer .cardcontainer:hover{
+    opacity: 50%;
+}
+
+/*Cadastro de em-mai-----------------------------------*/
+body .sectionEmailContainer{
+    width: 1200px;
+    margin-top: 75px;
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+body .sectionEmailContainer .texto{
+    display: flex;
+    justify-content: left;
+    width: 750px;
+
+}
+
+body .sectionEmailContainer .texto p{
+    color: white;
+    font-size: 18px;
+}
+
+body .sectionEmailContainer .form{
+    display: flex;
+    justify-content: left;
+    width: 750px;
+
+}
+
+body .sectionEmailContainer .form input {
+    border-style: none;
+    width: 450px;
+    height: 65px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    font-size: 30px;
+    text-transform: uppercase;
+
+    padding-left: 15px;
+}
+
+body .sectionEmailContainer .form button{
+    width: 300px;
+    height: 65px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #FF3333;
+
+    box-shadow: 0px 0px 10px black;
+
+    color: white;
+    font-size: 30px;
+
+    text-transform: uppercase;
+}
+
+body .sectionEmailContainer .form button:hover{
+    opacity: 50%;
+}
+
+/*footer geral inicio-----------------------------------*/
+footer .geral{
+    height: 330px;
+    background-image: linear-gradient(to right, black, #1B2339,black);
+
+    display: flex;
+    justify-content:center;
+}
+
+/*footer geral container----------------------------------*/
+footer .geral .container-1{
+    width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .geral .container-1 h1{
+    font-size: 24px;
+    font-style: bold;
+    text-decoration:underline;
+    color: white;
+}
+
+/*footer geral container sobre a loja----------------------------------*/
+footer .geral .container-1 .container-1a{
+    max-width: 400px;
+
+}
+
+footer .geral .container-1 .container-1a p{
+    margin-top: 25px;
+    color: white;
+    max-width: 400px;
+
+}
+
+
+/*footer geral container atendimento----------------------------------*/
+footer .geral .container-1 .container-1b{
+    max-width: 400px;
+}
+
+footer .geral .container-1 .container-1b nav{
+    margin-top: 25px;
+}
+
+footer .geral .container-1 .container-1b nav .navAtendimento {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .geral .container-1 .container-1b nav .navAtendimento:hover {
+   opacity: 50%;
+}
+
+footer .geral .container-1 .container-1b nav li{
+    list-style-position: inside;
+    list-style-image: url(../images/seta_para_direita.png);
+}
+/*footer geral container formas de pagamento----------------------------------*/
+footer .geral .container-1 .container-1c{
+    max-width: 400px;
+
+}
+
+footer .geral .container-1 .container-1c img{
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+
+/*footer geral final -----------------------------------*/
+
+/*footer direitos inicio-----------------------------------*/
+footer .direitos{
+    height: 70px;
+    background-color: #1B2339;
+
+    display: flex;
+    justify-content: center;
+}
+footer .direitos .container-1{
+    width: 1200px;
+
+}
+footer .direitos .item1{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+}
+/*footer direitos final-----------------------------------*/
